@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* bg color */
+    --background: #0a0908;
+    --primary: #5a189a;
+    --nav bg: #f72585;
+    --secondary: #3f37c9;
+
+    /* text colors */
+    --text-gray: #adb5bd;
+    --text-white: #f8f9fa;
+    --text-black: #0a0908;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* header */
+
+.header {
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #000046, #1cb5e0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000046, #1cb5e0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0px 30px 0px 30px;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    height: 110%;
+}
+
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar {
+    gap: 150px;
+
+}
+
+.navbar-list {
+    gap: 50px;
+}
+
+.navbar-list a {
+
+    color: var(--text-black);
+    font-size: 20px;
+
+}
+
+.navbar-list li:first-child>a {
+
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.cart-icon {
+    padding: 0px 30px 0px 60px;
+    margin-top: 3px;
+    height: 70px;
+    font-weight: 600px;
+    cursor: pointer;
+}
+
+/* main */
+
+main {
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+}
+
+#hero {
+
+    margin-top: 65;
+    padding: 100px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    background: #4776e6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4776e6, #8e54e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4776e6, #8e54e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hero-info p {
+    font-size: 15px;
+    width: 70%;
+    color: var(--text-gray);
+}
+
+.hero-info a {
+    color: var(--text-white);
+    background-color: var(--primary);
+    width: 120px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-card {
+    width: 650px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
