@@ -3,10 +3,10 @@
 :root {
     /* bg color */
     --background: #0a0908;
-    --primary: #5a189a;
-    --nav bg: #f72585;
-    --secondary: #3f37c9;
-
+    --primary: #3a86ff;
+    --secondary: #6f2dbd;
+    --card:#27187e;
+    
     /* text colors */
     --text-gray: #adb5bd;
     --text-white: #f8f9fa;
@@ -25,12 +25,9 @@
 /* header */
 
 .header {
-    background: #000046;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #000046, #1cb5e0);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000046, #1cb5e0);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to margin-top, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -133,11 +130,13 @@ main {
     font-size: 15px;
     width: 70%;
     color: var(--text-gray);
+
+
 }
 
 .hero-info a {
     color: var(--text-white);
-    background-color: var(--primary);
+    background-color: var(--secondary);
     width: 120px;
     padding: 8px 0px;
     border-radius: 10px;
@@ -153,4 +152,66 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+}
+
+/* Info Card */
+#info {
+    padding: 5px 0  80px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#info h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #3f37c9;
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card {
+width: 300px;
+height: 350px;
+padding: 20px 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background: var(--card);
+border-radius: 20px;
+gap: 20px;
+}
+
+footer {
+background: var(--background);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 40px;
+padding: 5px 0;
+}
+
+footer a,
+footer p {
+color: var(--text-white);
+font-weight: 300;
+font-size: 14px;
+}
+
+.redes-footer {
+display: flex;
+justify-content: center;
+gap: 20px;
+
 }
